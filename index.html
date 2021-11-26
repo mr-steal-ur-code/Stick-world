@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       :root {
+  --stick-color: black;
+}
+
+#stickman :hover {
+  cursor: pointer;
+}
+
+#base .floor {
+  top: 750px;
+  left: -30px;
+  height: 100px;
+  width: 300px;
+  background: grey;
+  margin: 0 auto;
+  position: relative;
+  }
+
+form {width: 20%;
+      margin-top: 20%;
+      margin-left: 3%;
+      text-align: center;
+      background-color: orange;
+      color: white;
+}
+  
+
+#stickman .leg1 {
+  position: relative;
+  top: 380px;
+  left: 112px;
+  height: 20px;
+  width: 100px;
+  background: var(--stick-color);
+  transform: rotate(50deg);
+}
+#stickman .leg2 {
+  position: relative;
+  top: 360px;
+  left: 38px;
+  height: 20px;
+  width: 90px;
+  background: var(--stick-color);
+  transform: rotate(125deg);
+}
+#stickman .body {
+  position: relative;
+  top: -200px;
+  left: 50px;
+  height: 40px;
+  width: 140px;
+  background: var(--stick-color);
+  transform: rotate(90deg);
+}
+#stickman .arm1 {
+  position: relative;
+  top: 200px;
+  left: 130px;
+  height: 15px;
+  width: 100px;
+  background: var(--stick-color);
+  transform: rotate(50deg);
+  animation: wave2 1s alternate infinite ease-in-out;
+  transform-origin: 0%;
+}
+
+@keyframes wave2 {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+  #stickman .arm2 {
+  position: relative;
+  top: 213px;
+  left: 30px;
+  height: 15px;
+  width: 100px;
+  background: var(--stick-color);
+  transform: rotate(130deg);
+}
+  #stickman .head {
+  background-color: var(--stick-color);
+  border-radius: 100px;
+  padding: 60px;
+  margin: 140px;
+  width: 5px;
+  position: relative;
+  top: -105px;
+  left: -82px;
+  }
+
+
+  #stickman {
+  height: 300px;
+  width: 300px;
+  top: 210px;
+  margin: 0 auto;
+  position: relative;
+  transform-origin: 0% 0%;
+  animation: jump .7s ease-in infinite;
+  }
+
+@keyframes jump {
+  0% {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  35%  {transform: translate3d(0,0,0) scale3d(1,1.1,1);}
+  100%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  }
+} 
+    </style>
+</head>
+<body>
+    <div id="base">
+        <div class="floor"></div>
+      </div>
+      
+      <div id="stickman">
+        <div class="leg1"></div>
+        <div class="leg2"></div>
+        <div class="arm1"></div>
+        <div class="arm2"></div>
+        <div class="head"></div>
+        <div class="body"></div>
+        </div>
+      
+        <form>
+        <h2>I did not steal this, more like borrowed</h2>
+        <label for="color">
+          🎨
+          <input id="color" type="color" value="black" />
+          </form> 
+</body>
+</html>
