@@ -3,4 +3,4 @@ document.addEventListener("input", (event) => {
     if (event.target.id === "color" && event.target.value) {
         document.body.style.setProperty('--stick-color', event.target.value);
     }
-  });
+});

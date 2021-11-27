@@ -167,12 +167,12 @@
     left: 30px;
     height: 15px;
     width: 100px;
-    background: black;
+    background: var(--stick-color);
     transform: rotate(130deg);
   }
 
   #stickman .head {
-    background-color: black;
+   background-color: var(--stick-color);
     border-radius: 100px;
     padding: 60px;
     margin: 140px;
