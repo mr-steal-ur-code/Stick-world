@@ -3,7 +3,7 @@
     --wall-color: grey;
     --window-color: yellow;
     --door-color: #654321;
-    --ion-background-color: #C2B280;
+    --ion-background-color: #cebc85;
     --sky-color: #191970;
   }
 
@@ -12,6 +12,9 @@
     padding-top: 15px;
     background: var(--sky-color);
     margin: 0 auto;
+    height: 495px;
+    width: 1000px;
+    max-width: 90%;
   }
 
   #stick-castle .roof1 {
